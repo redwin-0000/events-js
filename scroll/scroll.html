@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        height: 2000px;
+    }
+</style>
+
+</head>
+<body>
+    <h1 class="scrolling">Ashutosh singh</h1>
+    <h2 class="scroll">scroll and wheel are the two methods which is use for detecting <br />the scrolling page and make a changes on certain time.</h2>
+    <script>
+
+window.addEventListener('scroll', function(){
+    console.log("scrolling....");
+ if(window.pageYOffset == 0){
+    console.log("My name is Ashutosh singh");
+    document.body.style.background = "gray";
+ }else if(window.pageYOffset < 300){
+    console.log("My wife name is Dr. Shreya Singh");
+    document.body.style.background = "pink";
+ }else if(window.pageYOffset > 300 && window.pageYOffset < 400){
+    console.log("You both are couple");
+    document.body.style.background = "red"
+ }
+});
+window.addEventListener('wheel', function(event){
+    if(event.deltaY < 0){
+        console.log("scrolling up...");
+    }else if(event.deltaY > 0){
+        console.log("scrolling down...");
+    }
+})
+document.querySelector(".scrolling").innerHTML = "Dr. Shreay Singh"
+// document.querySelector(".scroll").innerHTML = "In this page, I'm practice for detecting the scrolling page at a certain page."
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset <= 200){
+        document.querySelector(".scroll").innerHTML = "Hey, You scrolling this page.";
+    }else if(window.pageYOffset > 200){
+        document.querySelector(".scroll").innerHTML = "Hey, Stop the scrolling this page.";
+    }
+})
+    </script>
+</body>
+</html>

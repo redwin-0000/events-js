@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+
+    </ul>
+
+    <script>
+    let list1 = document.getElementById("list");
+
+    let item = document.createElement("li");
+    item.textContent = "new item6";
+
+    let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;
+    list1.insertBefore(item,pos);
+
+    let parent = document.body;
+    let elm = document.createElement("h2");
+    elm.textContent = "This is new elemnt";
+
+    let list = document.getElementById("list");
+    parent.insertBefore(elm,list);
+
+    // let parents = document.body;
+    // let element = document.createElement("h3");
+    // element.textContent("new item6 and this is new element and this line is inserted by using js-DOM");
+
+    // let lists = document.getElementsByTagName("h2");
+    // parents.insertBefore(element,lists)
+
+     const lst = document.getElementById("list");  // lastElementChild is retur the last elemet of id or context
+     console.log(lst.lastElementChild.textContent);
+        
+    </script>
+</body>
+</html>
