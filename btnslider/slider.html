@@ -20,10 +20,28 @@
     </div>
     <button type="button" id="slide">slider button</button>
 
+
+    <div id="Subcontainer">
+        <div id="content">Click the button to slide right!</div>
+        <div id="content">my name is ashutosh singh, and<br />
+        i'm complete my diploma and graduatiopn from allahabad <br />
+        with 80%.<br/>
+        my name is ashutosh singh, and<br />
+        i'm complete my diploma and graduatiopn from allahabad <br />
+        with 80%.
+        </div>
+        </div>
+        <button type="button" id="slider">slider button</button>
+    
     <script>
    const button = document.getElementById("slide");
    button.onclick =()=>{
   document.getElementById("container").scrollLeft +=20;
+   }
+
+   const Button = document.getElementById("slider");
+   Button.onclick =()=>{
+    document.getElementById("Subcontainer").scrollLeft +=20;
    }
     </script>
 </body>

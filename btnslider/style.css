@@ -5,6 +5,12 @@
     overflow-x: scroll;
   }
   
+  #Subcontainer {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+  }
   #content {
     width: 250px;
     background-color: #ccc;
