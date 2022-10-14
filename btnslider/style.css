@@ -3,6 +3,7 @@
     height: 150px;
     border: 1px solid #ccc;
     overflow-x: scroll;
+    margin-bottom: 10px;
   }
   
   #Subcontainer {
@@ -10,8 +11,11 @@
     height: 150px;
     border: 1px solid #ccc;
     overflow-x: scroll;
+    margin-top: 50px;
+    
   }
   #content {
     width: 250px;
     background-color: #ccc;
+  
   }
